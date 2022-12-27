@@ -3,16 +3,19 @@
 const header = document.getElementById('header')
 const card = document.querySelector('.card');
 
-card.addEventListener('mouseover', function(){
+if (card != null) {
+    card.addEventListener('mouseover', function(){
     
-    card.querySelector('.card__inner').classList.add('is-flipped')
+        card.querySelector('.card__inner').classList.add('is-flipped')
+        
+    })
     
-})
+    card.addEventListener('mouseout', function(){
+        
+        card.querySelector('.card__inner').classList.remove('is-flipped')
+    })
+}
 
-card.addEventListener('mouseout', function(){
-    
-    card.querySelector('.card__inner').classList.remove('is-flipped')
-})
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
