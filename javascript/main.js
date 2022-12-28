@@ -26,20 +26,7 @@ window.onscroll = function() {
     header.style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
-  
-    var OpacityY = 740
-
-    if(currentScrollPos <= OpacityY){
-        header.classList.add('w3-opacity-max')
-        header.classList.remove('w3-grey')
-    }
-    else{
-        header.classList.remove('w3-opacity-max')
-        header.classList.add('w3-grey')
-    }
-
-}
-
+} 
 
 
 // Automatic Slideshow - change image every 4 seconds
@@ -78,4 +65,3 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
-
