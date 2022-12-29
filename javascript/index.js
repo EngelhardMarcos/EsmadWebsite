@@ -20,7 +20,8 @@ if (card != null) {
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+
+  if (prevScrollpos > currentScrollPos) { 
     header.style.top = "0";
   } else {
     header.style.top = "-100px";
@@ -29,11 +30,11 @@ window.onscroll = function() {
   
     var OpacityY = 740
 
-    if(currentScrollPos <= OpacityY){
+    if(currentScrollPos <= OpacityY){ //Make opacity
         header.classList.add('w3-opacity-max')
         header.classList.remove('w3-grey')
     }
-    else{
+    else{ // Remove opacity
         header.classList.remove('w3-opacity-max')
         header.classList.add('w3-grey')
     }
@@ -78,4 +79,13 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+function openYear(cityName) {
+    var i;
+    var x = document.getElementsByClassName("term");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+  }
 

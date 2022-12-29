@@ -9,14 +9,15 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="w3-top w3-black " id="header">
-        <div class="w3-bar  w3-card  w3-bar ">
-            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Mestrado em Sistema e Medios Interativos</a>
-            <ul class="w3-ul w3-right">
-                <li><a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large">Sobre Nós</a></li>
-                <li><a href="#"  class="w3-bar-item w3-button w3-padding-large">PLANO DE ESTUDO</a></li>
-                <li><a href="gallery.html"  class="w3-bar-item w3-button w3-padding-large">GALERIA</a></li>
-                <li><a href="partnership.html" class="w3-bar-item w3-button w3-padding-large" >PARCERIAS</a></li>
+    <div class="w3-top w3-grey" id="header">
+        <img src="../images/header/P_logo.png" style="width:5%; height:5%"  alt="ESMADLogo" class="w3-bar-itemn w3-padding w3-centered w3-left-align">
+        <div class="w3-bar  w3-bar w3-no-opacity">
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding w3-centered w3-text-white"> <h2> Mestrado em Sistemas e <br> Media Interativos</h2> </a>
+            <ul class="w3-ul w3-right w3-no-opacity">
+                <li><a href="partnership.html" class="w3-bar-item w3-button w3-padding w3-centered w3-text-white w3-padding-top-24"><h2>Início</h2></a></li>
+                <li><a href="aboutus.html" class="w3-bar-item w3-button w3-padding w3-centered w3-text-white w3-padding-top-24"> <h2> Sobre Nós</h2> </a></li>
+                <li><a href="#"  class="w3-bar-item w3-button w3-padding w3-centered w3-text-white w3-padding-top-24"><h2>Plano de Estudos</h2> </a></li>
+                <li><a href="gallery.html"  class="w3-bar-item w3-button w3-padding w3-centered w3-text-white w3-padding-top-24"><h2>Galeria</h2></a></li>
             </ul>
         </div>
     </div>
@@ -28,52 +29,173 @@
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large" >CONTACT</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
     </div>
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;">
 
+        <!-- Automatic Slideshow Images -->
+        <div class="w3-display-container w3-center">
+            <img src="https://www.w3schools.com/w3images/la.jpg" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-text-white w3-padding-32 w3-hide-small w3-left-align w3-padding-64">
+                <h2>O Mestrado em Sistemas e Media Interativos <br> foi fundado em 2017 e contou com mais de <br> 200 estudantes os quais concluiram o <br> mesmo</h2>
+                
+            </div>
+        </div>
         <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-            <h2 class="w3-wide">THE BAND</h2>
-            <p class="w3-opacity"><i>We love music</i></p>
-            <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2 class="w3-wide"> Planos de Estudos</h2>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openYear('FirstTerm')"> 1º semestre</button>
+                <button class="w3-bar-item w3-button" onclick="openYear('SecondTerm')">2º semestre</button>
+                
+            </div>
+            <div id="FirstTerm" class="term">
+                <table class="w3-left-align">
+                    <tr>
+                        <th> Unidade Curricular </th>
+                        <th> Ano </th>
+                        <th> Créditos ECTS</th>
+    
+                    </tr>
+                    <tr>
+                        <td> Laboratórios de Ambientes Interativos</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Metodologias de Investigação Aplicadao</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Narrativas Interativas</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Sistemas Sensíveis ao Contexto </td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Animação Perfomativa em Tempo Real (opcional)</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Computação na Nuvem (opcional)</td>
+                        <td> 2º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Projeto/Dissertação/Estágio</td>
+                        <td> 2º ano</td>
+                        <td> 48</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="SecondTerm" class="term" style="display: none;">
+                <table class="w3-left-align">
+                    <tr>
+                        <th> Unidade Curricular </th>
+                        <th> Ano </th>
+                        <th> Créditos ECTS</th>
+    
+                    </tr>
+                    <tr>
+                        <td> Motion Graphics e VideoMapping</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Desenho de Interfaces e Interação</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Programação Criativa</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Animação de Personagens em Contextos Interativos (opcional) </td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Plataformas Ubíquas</td>
+                        <td> 1º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Seminários em Ambientes Multimédia</td>
+                        <td> 2º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Seminários em Ambientes Web</td>
+                        <td> 2º ano</td>
+                        <td> 6</td>
+                    </tr>
+                    <tr>
+                        <td> Projeto/Dissertação/Estágio</td>
+                        <td> 2º ano</td>
+                        <td> 48</td>
+                    </tr>
+                </table>
+            </div>
             
 
         
         <!-- The Contact Section -->
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-            <h2 class="w3-wide w3-center">CONTACT</h2>
-            <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-            <div class="w3-row w3-padding-32">
-                <div class="w3-col m6 w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-                </div>
-                <div class="w3-col m6">
-                    <form action="/action_page.php" target="_blank">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-                    </form>
-                </div>
-            </div>
+            <h2 class="w3-wide w3-center">Condições de Acesso</h2>
+            <p class="w3-opacity w3-center">Podem candidatar-se ao ciclo de estudos  conducentes ao grau de mestre: </p>
+            <ol type="1" class="w3-justify">
+                <li> Titulares do grau de licenciado ou equivalente legal.</li>
+                <li> Titulares de um grau académico superior estrangeiro conferido na sequência de um 1º ciclo de estudos organizado de acordo com os principios do Processo 
+                    de Bolonha por um Estado aderente a este processo.
+                </li>
+                <li> Titulares de um grau académico superior estrangeiro que seja reconhecido como satisfazendo objetivos do grau de licenciado pelo Conselho
+                    Técnico-Científico da escola que leciona o curso a que o estudante se candidata.
+                </li>
+                <li> Detentores de um currículo escolar, científico ou profissional, que seja reconhecido como atestando capacidade para realização deste ciclo de estudos pelo conselho
+                    Técnico-Científico da escola que leciona o curso a que o estudante se candidata.
+                </li>
+                <li>
+                    O reconhecimento a que se referem as alíneas 2) a 4) do número anterior tem como efeito apenas o acesso ao ciclo de estudos conducentes ao grau de mestre 
+                    e não confere ao seu titular a equivalencia ao grau de licenciado ou reconhecimento desse grau.
+                </li>
+
+            </ol>
         </div>
 
+        <!-- The Contact Section -->
+        <div class="w3-container w3-content w3-padding-64 w3-row w3-padding-32" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Periodo de Candidatura</h2>
+            <a class="w3-third w3-center  w3-circle-height w3-button w3-circle w3-text-white w3-grey " href="https://www.w3schools.com/spaces" target="_blank"> Website Oficial da ESMAD</a>
+            <a class="w3-third w3-button w3-circle w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
+            <a class="w3-third w3-button w3-circle w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
+
+        </div>
+
+        <!-- The Contact Section -->
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Afixação dos resultados</h2>
+            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey " href="https://www.w3schools.com/spaces" target="_blank"> Website Oficial da ESMAD</a>
+            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
+            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
+            
+        </div>
+
+        <!-- The Contact Section -->
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Vagas</h2>
+            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey " href="https://www.w3schools.com/spaces" target="_blank"> Website Oficial da ESMAD</a>
+            
+        </div>
         <!-- End Page Content -->
     </div>
-
+    </div>
     <!-- Image of location/map -->
 
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
