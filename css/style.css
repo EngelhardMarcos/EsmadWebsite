@@ -40,14 +40,15 @@ audio,canvas,progress,video{display:inline-block}progress{vertical-align:baselin
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 
 p{
-  font-size: 1rem;
+  font-family: 'LilGrotesk';
+  font-size: 0.9rem;
   line-height: 16px; 
 }
 a{
   line-height: 32px; 
   font-family: 'GroteskBold', sans-serif;
     background-color:transparent;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 a:active,a:hover{
     outline-width:0
@@ -82,11 +83,20 @@ h1,h2,h3,h4,h5,h6{
     margin:10px 0;
     
 }
+h1 {
+  font-size: 2.5rem;
+}
 h2{
   font-size: 1.5rem;
 }
 h3{
-  font-size: 1.5 rem;
+  font-size: 1.25 rem;
+}
+h4 {
+  font-size: 1 rem;
+}
+.h-titulo{
+  font-size: 4 rem;
 }
 
 .text-bold{
@@ -144,6 +154,12 @@ a{
 }
 .w3-ul > li:last-child{
     float: right;
+}
+
+.float-center{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .w3-ul-footer{
@@ -287,7 +303,8 @@ a{
 .w3-leftbar{border-left:6px solid #ccc!important}.w3-rightbar{border-right:6px solid #ccc!important}
 .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
 .w3-margin{margin:16px!important}.w3-margin-top{margin-top:20px!important}.w3-margin-bottom{margin-bottom:16px!important}
-.w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
+.w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:32px!important}
+.w3-margin-left-32{margin-left:32px!important}
 .w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
@@ -513,4 +530,35 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
   .padding-footer{
     padding:  2rem 0 4.5rem 0;
   }
+
+  .padding-circle{
+    display: flex;
+    padding: 10rem 10rem;
+    text-align: center;
+  }
+
+  .padding-circle-smaller{
+    display: flex;
+    padding: 5rem 5rem;
+    text-align: center;
+    
+  }
+
+  .padding-circle-tiny{
+    display: flex;
+    padding: 2.5rem 2.5rem;
+    text-align: center;
+    
+  }
+
+  .border-box{
+    
+    width: 49.65%;
+  }
+
+  .height-add{
+    height: 4rem;
+  }
+
+  
   

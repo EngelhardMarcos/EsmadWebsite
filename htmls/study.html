@@ -42,14 +42,14 @@
         </div>
         <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-            <h2 class="w3-wide"> Planos de Estudos</h2>
-            <div class="w3-bar w3-black">
-                <button class="w3-bar-item w3-button" onclick="openYear('FirstTerm')"> 1º semestre</button>
-                <button class="w3-bar-item w3-button" onclick="openYear('SecondTerm')">2º semestre</button>
+            <h2 class=""> Planos de Estudos</h2>
+            <div class=" w3-black">
+                <button class="border-box w3-bar-item w3-button w3-orange w3-text-white" id="FirstTermbtn"> 1º semestre</button>
+                <button class="border-box w3-bar-item w3-button w3-text-white" id="SecondTermbtn">2º semestre</button>
                 
             </div>
             <div id="FirstTerm" class="term">
-                <table class="w3-left-align">
+                <table class="w3-left-align w3-table w3-text-white w3-grey">
                     <tr>
                         <th> Unidade Curricular </th>
                         <th> Ano </th>
@@ -94,12 +94,12 @@
                 </table>
             </div>
             <div id="SecondTerm" class="term" style="display: none;">
-                <table class="w3-left-align">
+                <table class="w3-left-align w3-table w3-text-white w3-grey">
                     <tr>
                         <th> Unidade Curricular </th>
                         <th> Ano </th>
                         <th> Créditos ECTS</th>
-    
+                        
                     </tr>
                     <tr>
                         <td> Motion Graphics e VideoMapping</td>
@@ -143,13 +143,14 @@
                     </tr>
                 </table>
             </div>
+            </div>
             
 
         
         <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-            <h2 class="w3-wide w3-center">Condições de Acesso</h2>
-            <p class="w3-opacity w3-center">Podem candidatar-se ao ciclo de estudos  conducentes ao grau de mestre: </p>
+        <div class="w3-container w3-content w3-padding-64" id="contact">
+            <h2 class=" w3-center">Condições de Acesso</h2>
+            <p class="w3-justify">Podem candidatar-se ao ciclo de estudos  conducentes ao grau de mestre: </p>
             <ol type="1" class="w3-justify">
                 <li> Titulares do grau de licenciado ou equivalente legal.</li>
                 <li> Titulares de um grau académico superior estrangeiro conferido na sequência de um 1º ciclo de estudos organizado de acordo com os principios do Processo 
@@ -170,31 +171,43 @@
         </div>
 
         <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64 w3-row w3-padding-32" style="max-width:800px">
-            <h2 class="w3-wide w3-center">Periodo de Candidatura</h2>
-            <a class="w3-third w3-center  w3-circle-height w3-button w3-circle w3-text-white w3-grey " href="https://www.w3schools.com/spaces" target="_blank"> Website Oficial da ESMAD</a>
-            <a class="w3-third w3-button w3-circle w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
-            <a class="w3-third w3-button w3-circle w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
+        <h2 class=" w3-left w3-row w3-text-orange">Candidaturas</h2>
+        <div class="w3-container w3-center w3-padding-64 w3-bar w3-center-align " style="width:100%">
+            <br>
+            <div class=" w3-left-align w3-bar "  >
+                <div class=" w3-bar-item ">
+                    <h2 class="w3-left-align w3-wide h-titulo">Periodo de Candidatura</h2>
+                    <div class="w3-row">
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny  w3-text-white w3-grey"> 1ªfase</a>
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny  w3-text-white w3-grey "> 2ªfase</a>
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny   w3-text-white w3-grey"> 3ªfase</a>
+
+                    </div>
+                </div>
+                <div class="w3-bar-item">
+                    <h2 class=" w3-left-align">Afixação dos resultados</h2>
+                    <div class="w3-row">
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny  w3-text-white w3-grey"> 1ªfase</a>
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny  w3-text-white w3-grey "> 2ªfase</a>
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny   w3-text-white w3-grey"> 3ªfase</a>
+
+                    </div>
+                </div>
+                <div class="w3-bar-item">
+                    <h2 class=" w3-left-align">Vagas</h2>
+                    <div class="w3-row">
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-button w3-circle padding-circle-tiny  w3-text-white w3-grey"> 20</a>
+                        <a class="w3-col s3 w3-margin-right  float-center w3-center w3-circle padding-circle-tiny  w3-text-white "> 2ªfase</a>
+                        <a class="w3-col s3 w3-margin-right  float-center w3-centerw3-circle padding-circle-tiny   w3-text-white"> 3ªfase</a>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-            <h2 class="w3-wide w3-center">Afixação dos resultados</h2>
-            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey " href="https://www.w3schools.com/spaces" target="_blank"> Website Oficial da ESMAD</a>
-            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
-            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey" href="https://www.w3schools.com/spaces" target="_blank"> Como chegar à ESMAD</a>
-            
-        </div>
-
-        <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-            <h2 class="w3-wide w3-center">Vagas</h2>
-            <a class="w3-button w3-circle  w3-margin-bottom center-button w3-padding-horizontal-32 w3-text-white w3-grey " href="https://www.w3schools.com/spaces" target="_blank"> Website Oficial da ESMAD</a>
-            
-        </div>
         <!-- End Page Content -->
-    </div>
+    
     </div>
     <!-- Image of location/map -->
 

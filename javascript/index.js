@@ -2,6 +2,8 @@
 
 const header = document.getElementById('header')
 const card = document.querySelector('.card');
+const firstTerm = document.getElementById('FirstTermbtn')
+const secondTerm = document.getElementById('SecondTermbtn')
 
 if (card != null) {
     card.addEventListener('mouseover', function(){
@@ -80,12 +82,37 @@ window.onclick = function (event) {
     }
 }
 
-function openYear(cityName) {
+firstTerm.addEventListener('click', function openTerm() {
+    firstTerm.classList.add('w3-orange')
+    secondTerm.classList.remove('w3-orange')
+    var i;
+    var x = document.getElementsByClassName("term");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById('FirstTerm').style.display = "block";
+  
+})
+
+secondTerm.addEventListener('click', function openTerm() {
+    secondTerm.classList.add('w3-orange')
+    firstTerm.classList.remove('w3-orange')
+    var i;
+    var x = document.getElementsByClassName("term");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById('SecondTerm').style.display = "block";
+  
+})
+
+function openYear(cityName, button) {
+    button.classList.add('w3-orange')
     var i;
     var x = document.getElementsByClassName("term");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById('SecondTerm').style.display = "block";
   }
 
