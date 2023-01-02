@@ -39,6 +39,11 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+video{
+  height: 100vh;
+        width: 100%;
+        object-fit: cover;
+}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 
 p{
@@ -322,6 +327,7 @@ a{
 .w3-margin{margin:16px!important}.w3-margin-top{margin-top:20px!important}.w3-margin-bottom{margin-bottom:16px!important}
 .w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
 .w3-margin-left-32{margin-left:32px!important}.w3-margin-right-32{margin-right:64px!important}
+.w3-margin-left-64{margin-left: 48px !important;}
 .w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
@@ -478,6 +484,12 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     align-items: center;
     justify-content: center;
   }
+
+  .card__face--static {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .card__face--front h2 {
     color: #FFF;
@@ -523,6 +535,18 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     background-color: #FFF;
     border: 5px solid #FFF;
     object-fit: cover;
+  }
+
+  .bottom-border{
+    border-color: var(--orange) var(--orange) var(--orange) var(--orange);
+  border-style: solid solid solid solid;
+  border-width: 0px 0px 3px 0px;
+  }
+
+  .left-border{
+  border-color: var(--orange) var(--orange) var(--orange) var(--orange);
+  border-style: solid solid solid solid;
+  border-width: 0px 0px 0px 2px;
   }
   
   .card__header h2 {
