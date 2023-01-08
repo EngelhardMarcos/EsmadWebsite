@@ -49,7 +49,7 @@ audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 p{
   font-family: 'LilGrotesk';
   font-size: 0.9rem;
-  line-height: 16px; 
+  line-height: 1.25em; 
 }
 a{
   line-height: 1.5rem; 
