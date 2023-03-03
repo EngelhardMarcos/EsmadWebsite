@@ -49,7 +49,7 @@ audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 p{
   font-family: 'LilGrotesk';
   font-size: 0.9rem;
-  line-height: 1.25em; 
+  line-height: 16px; 
 }
 a{
   line-height: 1.5rem; 
@@ -618,6 +618,45 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
   .z-index-2{
     position: relative;
     z-index: 3;
+  }
+
+  .linha{
+    margin: 3%;
+    position: relative;
+  }
+
+  .firsttxt{
+    position: absolute;
+    top: 0.5em;
+    left: 1rm !important
+  }
+
+  .secondtxt{
+    position: absolute;
+    top: 5em;
+    left: 8rm !important;
+  }
+
+  .first-circle{
+    position: absolute;
+    top: 5em;
+    left: 3em;
+  }
+  .second-circle{
+    position: absolute;
+    top: 5em;
+    left: 12em;
+  }
+  .third-circle{
+    position: absolute;
+    top: 5em;
+    left: 21em;
+  }
+
+  .vagas-circle{
+    position: absolute;
+    top: 7em;
+    left: 5em;
   }
 
   
