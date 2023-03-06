@@ -502,6 +502,7 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     justify-content: center;
     background-color: var(--white);
     transform: rotateY(180deg);
+    
   }
   
   .card__content {
@@ -509,34 +510,6 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     height: 100%;
   }
   
-  .card__header {
-    position: absolute;
-    padding: 30px 30px 30px;
-  }
-  
-  .card__header:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border-radius: 0px 0px 0px 0px;
-  }
-  
-  .card__header > img {
-    display: flex;
-    width: 128px;
-    height: 128px;
-    margin: 0 auto 30px;
-    border-radius: 50%;
-    background-color: #FFF;
-    border: 5px solid #FFF;
-    object-fit: cover;
-  }
-
   .bottom-border{
     border-color: var(--orange) var(--orange) var(--orange) var(--orange);
   border-style: solid solid solid solid;
@@ -548,14 +521,7 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
   border-style: solid solid solid solid;
   border-width: 0px 0px 0px 2px;
   }
-  
-  .card__header h2 {
-    color: #FFF;
-    font-size: 32px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-  }
+
   
   .card__body {
     padding: 1.8rem;
@@ -571,7 +537,7 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
   .card__body p {
     color: var(--dark);
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .center{
@@ -594,7 +560,7 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
 
   .padding-circle-smaller{
     display: flex;
-    padding: 5rem 5rem;
+    padding: 1.5rem 1.5rem;
     text-align: center;
     
   }
@@ -605,7 +571,12 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     text-align: center;
     
   }
-
+  .padding-circle-medium{
+    display: flex;
+    padding: 2.5rem 3.5rem;
+    text-align: center;
+    
+  }
   .border-box{
     
     width: 49.65%;
@@ -621,7 +592,7 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
   }
 
   .linha{
-    margin: 3%;
+    margin: 2%;
     position: relative;
   }
 
