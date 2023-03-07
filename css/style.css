@@ -132,8 +132,12 @@ hr{
     
 }
 img{
-    vertical-align:middle
+    vertical-align:middle;
+    transition: filter 1s linear;
 }
+.blur { filter: blur(5px) brightness(0.5); }
+
+
 a{
     color:inherit
 }
@@ -596,6 +600,27 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     position: relative;
   }
 
+  .work-container{
+    position: relative;
+    text-align: center;
+  }
+
+  .centered-firsttxt{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  }
+
+  .centered-secondtxt{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  }
+
   .firsttxt{
     position: absolute;
     top: 0.5em;
@@ -629,6 +654,7 @@ div.w3-opacity-max .w3-button:hover{color:var(--gray)!important;}
     top: 7em;
     left: 5em;
   }
+
 
   
   

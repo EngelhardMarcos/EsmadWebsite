@@ -6,6 +6,7 @@ const firstTerm = document.getElementById('FirstTermbtn')
 const secondTerm = document.getElementById('SecondTermbtn')
 const competenciatxt = document.getElementById('competenciatxt')
 let CompetenciaBtn = []
+let WorkProjectHighlight = []
 
 
 if (card != null && card.length > 0) {
@@ -50,8 +51,9 @@ window.onscroll = function() {
 
 }
 GetCompetenciaButtons();
+GetPreviousWorkImg();
 function GetCompetenciaButtons() {
-    
+
     for (let i = 0; i < 8; i++) {
         let button = document.getElementById(`Competencia${i}`)
         if (button != null) { //Prevent add null objects
@@ -66,6 +68,44 @@ function GetCompetenciaButtons() {
         CompetenciaBtn[index].addEventListener('mouseleave', () => NotHover(CompetenciaBtn[index]))
     }
     
+}
+
+function GetPreviousWorkImg () {
+    var conveniancecount = $("div[class*='workDiv']").length // Find how many previous works there is
+    //Make them blurry (and stop blurry)
+    for (let i = 0; i < conveniancecount; i++) {
+        WorkProjectHighlight = document.getElementsByClassName('workDiv')
+        
+    }
+    for (let j = 0; j < WorkProjectHighlight.length; j++) {
+        //Add listeners
+        WorkProjectHighlight[j].addEventListener('mouseenter', () => BlurEffect(WorkProjectHighlight[j]))
+        WorkProjectHighlight[j].addEventListener('mouseleave', () => BlurLift(WorkProjectHighlight[j]));
+        
+    }
+}
+
+function BlurEffect(e) {
+    // TO do: text hide unhide
+    let img = e.querySelector('.workImg')
+    img.classList.add('blur') //Add blur
+    let txt1 = e.querySelector('.centered-firsttxt')
+    let txt2 = e.querySelector('.centered-secondtxt')
+    txt1.style.visibility = "visible"
+    txt2.style.visibility = "visible"
+    txt1.style.opacity = 1
+    txt2.style.opacity = 1
+}
+
+function BlurLift(e) {
+    let img = e.querySelector('.workImg')
+    img.classList.remove('blur') // Remove Blur
+    let txt1 = e.querySelector('.centered-firsttxt')
+    let txt2 = e.querySelector('.centered-secondtxt')
+    txt1.style.visibility = "hidden"
+    txt2.style.visibility = "hidden"
+    txt1.style.opacity = 0
+    txt2.style.opacity = 0
 }
 
 function Hover(e) {
@@ -106,9 +146,6 @@ function CompetenciaButton(e) {
     }
 }
 
-function CompetenciaHoverState() {
-    
-}
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
