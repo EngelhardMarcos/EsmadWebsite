@@ -191,7 +191,7 @@ if(firstTerm != null){
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
         }
-        document.getElementById('FirstTerm').style.display = "block";
+        document.getElementById('SecondTerm').style.display = "block";
       
     })
     
@@ -206,7 +206,7 @@ if( secondTerm != null){
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
         }
-        document.getElementById('SecondTerm').style.display = "block";
+        document.getElementById('FirstTerm').style.display = "block";
       
     })
 }
